@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kaffehuset - Direkt till din dörr</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!----- Header ------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="Products.html">Kaffe</a></li>
+                        <li><a href="">Om</a></li>
+                        <li><a href="">kontakt</a></li>
+                    </ul>
+                </nav>
+                <img src="img/kundvagn.png" width="30px" height="30px">
+                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <!----- Hero text/img ------>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Det bästa kaffet <br> direkt till din dörr</h1>
+                    <p>
+                    Är du kaffesugen? Då har du kommit rätt kompis. Men så du vet säljer vi bara fairtrade certifierat kaffe som odlats genom hållbara jordbruksmetoder. ja vet, visst låter det lite "too good to be true!?" Det är nästan så. Köp en påse och testa. Brygg det bruna bönvattnet och låt aromerna ta dig till höjderna och bortom vad du vet idag. Tro mig, du kommer inte ångra det.     
+                    
+                    </p>
+                    <a href="Products.html" class="btn">Vårt Kaffe &#8594;</a>
+                </div>
+
+                <div class="col-2">
+                    <img src="img/Hero.png" alt="Hero">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----  categories ------>
+    <div class="categories">
+
+
+        <div class="row">
+            <div class="col-3">
+                <img src="img/bönor.png" alt="bönor" height="300px" width="300px">
+                <div class="bildtext1">
+                    <p>Many desktop publishing packages and web page editors now use Lorem
+                        Ipsum as their default model text, and a search
+                        for 'lorem ipsum' will uncover many web sites still in their infancy</p>
+                </div>
+
+
+            </div>
+            <div class="col-3">
+                <img src="img/kaffesorter.png" alt="sorter" height="300px" width="300px">
+                <div class="bildtext2">
+                    <p>Many desktop publishing packages and web page editors now use Lorem
+                        Ipsum as their default model text, and a search
+                        for 'lorem ipsum' will uncover many web sites still in their infancy</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="img/sustainability.png" alt="sustain" height="300px" width="300px">
+                <div class="bildtext3">
+                    <p>Many desktop publishing packages and web page editors now use Lorem
+                        Ipsum as their default model text, and a search
+                        for 'lorem ipsum' will uncover many web sites still in their infancy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    
+    <!---Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Blablalbal bal bal</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------js for toggle menu ----------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
